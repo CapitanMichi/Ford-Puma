@@ -1,0 +1,37 @@
+sonar_Right = 0
+sonar_left = 0
+sonar_Front = 0
+
+def on_forever():
+    global sonar_Right, sonar_left, sonar_Front
+    sonar_Right = sonar.ping(DigitalPin.P1, DigitalPin.P0, PingUnit.CENTIMETERS)
+    sonar_left = sonar.ping(DigitalPin.P8, DigitalPin.P2, PingUnit.CENTIMETERS)
+    sonar_Front = sonar.ping(DigitalPin.P15, DigitalPin.P16, PingUnit.CENTIMETERS)
+    pins.digital_write_pin(DigitalPin.P12, 1)
+    pins.digital_write_pin(DigitalPin.P13, 0)
+    pins.analog_write_pin(AnalogPin.P14, 210)
+    if sonar_Right > 150 or sonar_Right == 0:
+        pins.digital_write_pin(DigitalPin.P9, 0)
+        pins.digital_write_pin(DigitalPin.P11, 1)
+    elif sonar_left > 150 or sonar_left == 0:
+        pins.digital_write_pin(DigitalPin.P9, 1)
+        pins.digital_write_pin(DigitalPin.P11, 0)
+    else:
+        if sonar_left > 25 and sonar_Right > 25:
+            pins.digital_write_pin(DigitalPin.P11, 0)
+            pins.digital_write_pin(DigitalPin.P9, 0)
+        elif sonar_left < 25 and sonar_left > 3:
+            pins.digital_write_pin(DigitalPin.P9, 0)
+            pins.digital_write_pin(DigitalPin.P11, 1)
+            basic.pause(200)
+            pins.digital_write_pin(DigitalPin.P9, 0)
+            pins.digital_write_pin(DigitalPin.P11, 0)
+        else:
+            if sonar_Right < 25 and sonar_Right > 3:
+                pins.digital_write_pin(DigitalPin.P9, 1)
+                pins.digital_write_pin(DigitalPin.P11, 0)
+                basic.pause(200)
+                pins.digital_write_pin(DigitalPin.P9, 0)
+                pins.digital_write_pin(DigitalPin.P11, 0)
+    basic.pause(10)
+basic.forever(on_forever)
