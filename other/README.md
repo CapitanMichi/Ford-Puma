@@ -59,7 +59,9 @@ Operating voltage: 7.4v
 
 Battery model: 18650 x2
 
+
 We use a camera to sort the obstacles
+
 Camera: HuskyLens
 - Specifications
 
