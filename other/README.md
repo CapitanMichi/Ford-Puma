@@ -59,10 +59,7 @@ Operating voltage: 7.4v
 
 Battery model: 18650 x2
 
-
-We use a camera to sort the obstacles
-
-Camera: HuskyLens
+Camera that we use to sort the obstalces: HuskyLens
 - Specifications
 
   - Processor: Kendryte K210
