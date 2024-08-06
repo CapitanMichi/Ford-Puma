@@ -1,7 +1,8 @@
-Engineering materials
+Future Engineers 2024
 ====
+Nosotros somos Esteban Solano y Diego Concepción. Pertenecemos a un equipo de la categoría de futuros ingenieros de la WRO y somos estudiantes del Thomas Jefferson School.
 
-This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2022.
+We are Esteban Solano and Diego Concepción. We belong to a team in the WRO future engineers category and are students at the Thomas Jefferson School.
 
 ## Content
 
