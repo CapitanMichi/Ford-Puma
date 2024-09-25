@@ -95,3 +95,5 @@ Camera that we use to sort the obstalces: HuskyLens
   - Built-in algorithms: face recognition, object tracking, object recognition, line tracking, color recognition, label recognition
 
   - Dimensions: 52mm-44.5mm
+
+*Note:* The camera is connected by the I2C communication protocol. Its connection is specified in the diagrams section.
