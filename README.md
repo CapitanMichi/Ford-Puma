@@ -12,4 +12,4 @@ We are Esteban Solano and Diego Concepción. We belong to a team in the WRO futu
 * `schemes` contain one schematic diagram in form of PNG of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other; also we have the schematic diagram in the extension of the app that we use.
 * `src` contains code of control software for all components which were programmed to participate in the competition.
 * `models` is for the files for models used by 3D printers and have a link with base chassis that we use.
-* `other` include documentation, how to connect to a SBC/SBM and upload files there, datasets, hardware specifications and communication protocols descriptions.
+* `other` include technical aspects, how to connect to a SBC/SBM and upload files there, datasets, hardware specifications and communication protocols descriptions.
