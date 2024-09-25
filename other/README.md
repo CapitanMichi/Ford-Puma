@@ -22,7 +22,7 @@ Controller: Microbit V2
   - Power/reset button with status LED
   - Maximum available current of 200 mA for peripherals
   - Programmable with C++, MakeCode, Python and Scratch.
-  - Dimensions: 50*45*7mm
+  - Dimensions: 50mm-45mm-7mm
 
 Power Distributor: Microbit Expansion Board
 - Specifications:
@@ -31,7 +31,7 @@ Power Distributor: Microbit Expansion Board
   - 1 I2C port
   - 5 Vdc (x USB) / 7 to 9 Vdc (x 2.1 mm jack)
   - Voltage output to sensor: 3.3 / 5 Vdc
-  - Dimensions: 55*65*10mm
+  - Dimensions: 55mm-65mm-10mm
 
 Motor Driver: L298N
 - Specifications:
@@ -43,7 +43,7 @@ Motor Driver: L298N
   - Current consumption (logical): 0 to 36mA
   - Current capacity: 2A (peaks up to 3A)
   - Maximum power: 25W
-  - Dimensions: 43*43*27mm
+  - Dimensions: 43mm-43mm-27mm
 
 Measures
 - Size: 
@@ -58,6 +58,21 @@ Max speed: 20Km/h
 Operating voltage: 7.4v
 
 Battery model: 18650 x2
+
+Ultrasonic Sensor HC-SR04
+- Specifications
+  - Operating Voltage: 5V DC
+  - Quiescent current: <2mA
+  - Working current: 15mA
+  - Measuring range: 2cm to 450cm
+  - Accuracy: +- 3mm
+  - Opening angle: 15°
+  - Ultrasound frequency: 40KHz
+  - Minimum TRIG trigger pulse duration (TTL level): 10 μS
+  - Output ECO pulse duration (TTL level): 100-25000 μS
+  - Dimensions: 45mm-20mm-15mm
+
+*Note:* Minimum waiting time between one measurement and the start of another 20ms (50ms recommended)
 
 Camera that we use to sort the obstalces: HuskyLens
 - Specifications
@@ -79,4 +94,4 @@ Camera that we use to sort the obstalces: HuskyLens
 
   - Built-in algorithms: face recognition, object tracking, object recognition, line tracking, color recognition, label recognition
 
-  - Dimensions: 52*44.5mm
+  - Dimensions: 52mm-44.5mm
